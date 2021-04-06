@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // for(var i = 0; i<10; i++){
+    //     // function a(){
+    //     //     console.log(i);
+    //     // }
+    //     // console.log(a);
+    //
+    //     setTimeout(function(){
+    //         console.log(i);
+    //     })
+    // }
+
+    // function text(...args){
+    //     console.log(args);
+    // }
+    //
+    // text(11,22,33)
+
+
+    let obj5 = {
+        age:11,
+        ["em"+"ail"] : "1916510516@qq.com",
+    }
+
+    obj5.name = "lisi"
+
+    Object.defineProperty(obj5,"sex",{
+        value:"F",
+        configurable:false,
+    });
+    console.log(obj5);
+
+
+    obj5["hel"+"lo"] = "hello world";
+    console.log(obj5);
+
+</script>
+</body>
+</html>
